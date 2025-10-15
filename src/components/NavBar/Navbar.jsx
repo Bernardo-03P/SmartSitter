@@ -16,6 +16,7 @@ function CustomNavbar() {
       className="navbar-home"
       variant="dark"
       expanded={expanded}
+      fixed="top"
     >
       <Container fluid className="ps-5 d-flex align-items-center justify-content-between">
         
