@@ -11,54 +11,59 @@ const images = [ImgSlide, ImgSlide2, ImgSlide3, ImgSlide4];
 function Carrosel() {
   const [width, setWidth] = useState(0);
   const carousel = useRef();
-  const x = useMotionValue(0); // posição x do inner
+  const x = useMotionValue(0);
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
 
-  // 👉 Atualiza o índice conforme a posição x do inner
   useEffect(() => {
     const unsubscribe = x.onChange((value) => {
       const totalWidth = width;
       const slideWidth = totalWidth / (images.length - 1);
-      const index = Math.round(-value / slideWidth); // negativo porque arrastar é negativo
+      const index = Math.round(-value / slideWidth);
       setActiveIndex(index);
     });
     return () => unsubscribe();
   }, [x, width]);
 
   return (
-    <div className="container">
-      <motion.div
-        ref={carousel}
-        className="carousel"
-        whileTap={{ cursor: "grabbing" }}
-      >
-        <motion.div
-          className="inner"
-          drag="x"
-          dragConstraints={{ right: 0, left: -width }}
-          style={{ x }}
-        >
-          {images.map((image, index) => (
-            <motion.div className="item" key={index}>
-              <img src={image} alt={`Slide ${index + 1}`} />
-            </motion.div>
-          ))}
-        </motion.div>
-      </motion.div>
-
-      <div className="indicators">
-        {images.map((_, index) => (
-          <div
-            key={index}
-            className={`dot ${activeIndex === index ? "active" : ""}`}
-          ></div>
-        ))}
+    <section className="carousel-section">
+      <div className="carousel-header">
+        <h2 className="carousel-title">Veja o que temos de melhor</h2>
       </div>
-    </div>
+
+      <div className="carousel-container">
+        <motion.div
+          ref={carousel}
+          className="carousel"
+          whileTap={{ cursor: "grabbing" }}
+        >
+          <motion.div
+            className="inner"
+            drag="x"
+            dragConstraints={{ right: 0, left: -width }}
+            style={{ x }}
+          >
+            {images.map((image, index) => (
+              <motion.div className="item" key={index}>
+                <img src={image} alt={`Slide ${index + 1}`} />
+              </motion.div>
+            ))}
+          </motion.div>
+        </motion.div>
+
+        <div className="indicator-wrapper">
+          {images.map((_, index) => (
+            <div
+              key={index}
+              className={`dot ${activeIndex === index ? "active" : ""}`}
+            ></div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
 

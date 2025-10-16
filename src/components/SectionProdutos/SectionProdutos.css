@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+  --texto-principal: #EEF4F5;
+  --texto-secundario: #B3C1C3;
+  --cor-botao: #6CBBD8;
+  --fundo: #191B1C;
+  --linha: #2B3234;
+}
+
+body {
+  background-color: var(--fundo);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== SECTION GERAL ===== */
+div {
+  color: var(--texto-principal);
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: var(--texto-principal);
+  font-size: 36px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+
+.linha {
+  width: 1px;
+  height: 458px; /* exatamente como no Figma */
+  background-color: #2B3234;
+  opacity: 1;
+  margin: auto 80px; /* centraliza verticalmente */
+  align-self: center;
+}
+
