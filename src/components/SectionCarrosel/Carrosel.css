@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px; 
+}
+
+.inner {
+  display: flex;
+  gap: 15px;
+}
+
+.item {
+  min-width: 80%;
+  user-select: none;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #a0a0a0; 
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  width: 16px;       
+  height: 16px;
+  background-color: #6CBBD8; 
+  border-radius: 50%;
+  transform: scale(1.2);
+}
