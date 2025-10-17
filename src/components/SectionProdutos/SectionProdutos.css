@@ -13,12 +13,11 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* ===== SECTION GERAL ===== */
 div {
   color: var(--texto-principal);
 }
 
-h1 {
+.nome-produto {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   color: var(--texto-principal);
@@ -28,13 +27,13 @@ h1 {
   margin-bottom: 80px;
 }
 
-
-.linha {
-  width: 1px;
-  height: 458px; /* exatamente como no Figma */
-  background-color: #2B3234;
-  opacity: 1;
-  margin: auto 80px; /* centraliza verticalmente */
-  align-self: center;
+.explore{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: var(--texto-principal);
+  font-size: 36px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  width: 100%;
+  margin-left: 150px;
 }
-

@@ -9,6 +9,7 @@ html, body {
 
 .login-bg {
   min-height: 100vh;
+  background-color: #EEF4F5;
   font-family: 'Poppins', sans-serif;
 }
 

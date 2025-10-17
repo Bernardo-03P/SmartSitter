@@ -1,10 +1,14 @@
-.titulo{
+.titulo {
     color: #EEF4F5;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 60px;
+    font-size: 40px;
+    text-align: left !important;
+    width: 100%; 
 }
+
+
 .txt{
     color: #EEF4F5;
     font-family: "Poppins", sans-serif;

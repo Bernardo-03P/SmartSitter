@@ -10,7 +10,7 @@ import '../../App.css'
 function NavbarCadastro() {
   return (
     <>
-      <Navbar bg="" data-bs-theme="">
+      <Navbar className='nav-cadastro' data-bs-theme="">
         <Container fluid className="ps-5">
           <Navbar.Brand className="logo ms-3" as={Link} to="/home">
             <img src={Logo} alt="SmartSitter" />

@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 .navbar-home {
-  background-color: #1A1C1D !important;
+  background-color: #1A1C1D ;
   padding: 0.8rem 1.5rem;
   font-family: "Poppins", sans-serif;
   font-style: normal;
 }
-
+.nav-cadastro{
+  background-color: #EEF4F5;
+}
 
 .custom-toggle {
   border: none !important;
