@@ -98,14 +98,15 @@ html, body {
   transition: background 0.2s;
 }
 
+.register {
+  color: #747A7C;
+  font-size: 1rem;
+}
 .register a {
   color: #57b0d6;
   text-decoration: none;
 }
 .register a:hover {
   text-decoration: underline;
-}
-
-.register a:hover {
   color: #57b0d6;
 }

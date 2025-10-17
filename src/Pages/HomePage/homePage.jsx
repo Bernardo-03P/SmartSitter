@@ -5,6 +5,7 @@ import SectionSono from '../../components/SectionSono/SectionSono.jsx'
 import SecitonBebe from '../../components/SecitonBebe/SecitonBebe.jsx'
 import SectionCarrosel from '../../components/SectionCarrosel/Carrosel.jsx'
 import SectionProdutos from '../../components/SectionProdutos/SectionProdutos.jsx'
+import Rodape from '../../components/Rodape/rodape.jsx'
 
 function HomePage() {
   return (
@@ -14,6 +15,7 @@ function HomePage() {
       <SecitonBebe/>
       <SectionCarrosel/>
       <SectionProdutos/>
+      <Rodape/>
     </div>
   )
 }
