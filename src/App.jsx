@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import 'bootstrap/dist/css/bootstrap.min.css'; // Removido, pois será importado globalmente no index.css ou tratado de forma mais específica
 import HomePage from './Pages/HomePage/homePage';
 import TelaLogin from './Pages/TelaLogin/TelaLogin';
 import Telacadastro from './Pages/TelaCadastro/Telacadastro';
+import TelaSuporte from './Pages/TelaSuporte/TelaSuporte';
 
 function App() {
  
@@ -17,6 +17,7 @@ function App() {
           <Route path="/home" element={<HomePage/>} />
           <Route path="/login" element={<TelaLogin/>} />
           <Route path="/cadastro" element={<Telacadastro/>}/>
+          <Route path="/suporte" element={<TelaSuporte/>}/>
         </Routes>
       </Router>
     </>
