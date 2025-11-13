@@ -1,7 +1,158 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-.suporte-bg{
-        min-height: 100vh;
-        background-color: #EEF4F5;
-        font-family: 'Poppins', sans-serif;
+.suporte-bg {
+  min-height: 100vh;
+  background-color: #EEF4F5;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.suporte-container {
+  padding: 60px 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.suporte-container h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+
+.card-suporte {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1050px;
+}
+
+.card-suporte label {
+  display: block;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 6px;
+  margin-top: 16px;
+}
+
+
+#assunto {
+  width: 391px;
+  height: 66px;
+  padding: 0 14px;
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background-color: #fff;
+}
+#TituloSuporte {
+  width: 712px;
+  height: 66px;
+  padding: 0 14px;
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background-color: #fff;
+}
+
+
+.card-suporte input,
+.card-suporte textarea {
+  width: 100%;
+  padding: 16px 18px;
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background-color: #fff;
+}
+
+.card-suporte textarea {
+  height: 180px;
+  resize: vertical;
+}
+
+
+.upload-box {
+  border: 2px dashed #CBD5E1;
+  background-color: #F7FAFC;
+  border-radius: 10px;
+  height: 135px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.upload-box:hover {
+  border-color: #38b2ac;
+  background-color: #F0FDFD;
+}
+.upload-box.dragover {
+  background-color: #E6FFFA;
+  border-color: #38b2ac;
+}
+
+.upload-box input {
+  display: none;
+}
+.upload-text {
+  color: #718096;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.upload-icon {
+  color: #38b2ac;
+  width: 28px;
+  height: 28px;
+  margin-bottom: 6px;
+}
+.preview-img {
+  max-width: 100%;
+  max-height: 120px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.card-suporte button {
+  width: 170px;
+  background-color: #7CB7CC;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+  align-self: flex-start;
+}
+.card-suporte button:hover {
+  background-color: #66a6bd;
+}
+
+@media (max-width: 768px) {
+  #assunto {
+    width: 100%;
+  }
+  #TituloSuporte{
+    width: 100%;
+  }
+  .suporte-container {
+    padding: 32px 24px;
+  }
+  .card-suporte {
+    max-width: 100%;
+  }
 }

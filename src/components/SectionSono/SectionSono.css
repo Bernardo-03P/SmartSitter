@@ -41,18 +41,78 @@ width: 100%;
 .sessao-img{
         margin-top: 10px; 
 }
-.sessao-txt-e-btn{
+.sessao-txt-e-btn {
   display: flex;
   flex-direction: column;
-  justify-content: center;  
-  align-items: flex-start;  
-  height: 100vh;            
-  padding-left: 10rem !important;       
-
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding-left: 10rem !important;
 }
+
 .sessao-botoes {
   display: flex;
   flex-direction: row;
   gap: 25px; 
   margin-top: 20px; 
+}
+
+/* 🖥️ Notebooks médios (até 1366px) */
+@media (max-width: 1366px) {
+  .sessao-txt-e-btn {
+    padding-left: 6rem !important;
+  }
+
+  .titulo {
+    font-size: 68px !important;
+  }
+
+  .txt {
+    font-size: 21px;
+  }
+}
+
+/* 💻 Tablets e notebooks menores */
+@media (max-width: 992px) {
+  .sessao-txt-e-btn {
+    height: auto;
+    padding: 3rem 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .titulo {
+    font-size: 48px !important;
+  }
+
+  .txt {
+    font-size: 18px;
+  }
+
+  .sessao-botoes {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .img-celular {
+    max-width: 80%;
+    margin: 20px auto;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 576px) {
+  .titulo {
+    font-size: 32px !important;
+  }
+
+  .txt {
+    font-size: 16px;
+  }
+
+  .btn-comprar,
+  .btn-app {
+    width: 130px;
+    height: 46px;
+  }
 }

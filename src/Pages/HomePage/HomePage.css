@@ -3,3 +3,60 @@ body, html {
   overflow-y: auto !important;
   background-color: #1A1C1D !important;
 } 
+/* ----------- Ajuste global responsivo ----------- */
+@media (max-width: 992px) {
+  .titulo {
+    font-size: 40px !important;
+    text-align: center;
+  }
+
+  .txt {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .sessao-txt-e-btn,
+  .section-bebe {
+    align-items: center !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    height: auto !important;
+    text-align: center;
+  }
+
+  .sessao-botoes {
+    justify-content: center !important;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .btn-comprar,
+  .btn-app {
+    width: 140px;
+    height: 48px;
+  }
+
+  .sessao-img img,
+  .img-nenem {
+    max-width: 80%;
+    margin: 20px auto 0;
+    display: block;
+  }
+}
+
+/* Telas muito pequenas (celulares menores que 576px) */
+@media (max-width: 576px) {
+  .titulo {
+    font-size: 32px !important;
+  }
+
+  .txt {
+    font-size: 16px;
+  }
+
+  .explore {
+    text-align: center;
+    margin-left: 0;
+    font-size: 28px;
+  }
+}
