@@ -5,6 +5,7 @@ import HomePage from './Pages/HomePage/homePage';
 import TelaLogin from './Pages/TelaLogin/TelaLogin';
 import Telacadastro from './Pages/TelaCadastro/Telacadastro';
 import TelaSuporte from './Pages/TelaSuporte/TelaSuporte';
+import TelaProduto from './Pages/TelaProduto/TelaProduto';
 
 function App() {
  
@@ -18,6 +19,7 @@ function App() {
           <Route path="/login" element={<TelaLogin/>} />
           <Route path="/cadastro" element={<Telacadastro/>}/>
           <Route path="/suporte" element={<TelaSuporte/>}/>
+          <Route path="/produto" element={<TelaProduto/>}/>
         </Routes>
       </Router>
     </>
